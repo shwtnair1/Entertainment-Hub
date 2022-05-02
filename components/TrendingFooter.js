@@ -1,5 +1,5 @@
 
 
 export const TrendingFooter=(props)=>{
-    return <h2 {...props}>Trending</h2>
+    return <h2 {...props}>View Trending</h2>
 }
