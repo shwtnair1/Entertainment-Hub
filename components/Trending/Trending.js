@@ -24,7 +24,7 @@ export const Trending =  ()=>{
             <span className={styles.pageTitle}>Trending Today</span>
             {trending.length>0 && trending.map((data)=>{
                     return (
-                    <div className={styles.listContainer}>
+                    <div className={styles.listContainer} key={data.id}>
                         <div className={styles.titelContainer}>
                             <h2>{data.title || data.name}</h2>
                             <span>&#9733;{data.vote_average}</span>
