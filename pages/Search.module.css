@@ -1,0 +1,22 @@
+.search{
+    display:flex;
+    justify-content: center;
+    margin:50px;
+}
+
+.searchContainer{
+    background-color: #39445a;
+    width:100%;
+    min-height:100vh;
+    position:absolute;
+}
+
+.listContent{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.emptyContainer{
+    margin: 10px 50px;
+}

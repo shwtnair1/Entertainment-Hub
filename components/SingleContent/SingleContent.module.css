@@ -1,0 +1,10 @@
+.cardContainer{
+    width:345px;
+    margin: 10px 50px;
+}
+
+.contentFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
