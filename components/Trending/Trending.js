@@ -7,6 +7,7 @@ import Pagination from '@material-ui/lab/Pagination';
 export const Trending =  ()=>{
     const [trending,setTrending] = useState([]);
     const [page,setPage] = useState(1);
+
     useEffect(()=>{
         const fetchData = async()=>{
             let res =  await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=b34aaaf0238f2468c2fe4a496791ab0d&page=${page}`);
@@ -14,6 +15,8 @@ export const Trending =  ()=>{
         }
 
         fetchData();
+        window.scroll(0,0);
+
     },[page])
 
     const handleChange = (e,value)=>{
